@@ -1,2 +1,73 @@
-# hackernews-dark
-Hacker News - Dark Mode CSS
+# Hacker News - Dark Mode CSS
+
+<p align="center">
+<img width="60%" alt="image" src="https://github.com/gastonmorixe/hackernews-dark/assets/637225/220a7c2f-4b9c-46ad-aa7f-abf151eefa6d">
+</p>
+
+
+```css
+/**
+* Hacker News - Dark Mode CSS
+*
+* Author: Gaston Morixe <gaston@gastonmorixe.com> 2023 MIT
+* Usage: Chrome stylus extension: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne 
+*        Settings: URLs on the domain: news.ycombinator.com
+*/
+
+* {
+    font-family: Courier; /* or any other font you like */
+    color: #ddd !important; 
+    font-size: unset !important;
+}
+
+body { 
+    background-color: black;
+    color: #ddd;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+a, a:link, a:visited {
+    color: #ddd;
+}
+
+table {
+    background: transparent;
+}
+
+table td[bgcolor='#ff6600'] {
+    background: transparent;
+    color: inherit;
+}
+
+.titleline,
+.subtext {
+    font-size: unset;
+}
+
+.subtext, .subtext * {
+    color: #888 !important;
+}
+
+.comment-tree .default > *:first-child, 
+.comment-tree .default > *:first-child *{
+    color: #888 !important;
+}
+
+img[src^='y18'] {
+    border: none !important;    
+}
+
+.votelinks {
+    vertical-align: middle;
+}
+
+.votearrow {
+    background-repeat: no-repeat;
+    margin: 3px 2px 4px;
+}
+```
+
+
+MIT License\
+Gaston Morixe 2023
